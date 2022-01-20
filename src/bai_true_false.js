@@ -70,7 +70,7 @@ function getAnswer(index, content, questId, token, gameId, examKey,type) {
     .then(response => response.json())
     .then(res => {
       if (res.data.point && res.data.point > 0) {
-        console.log(`${index}. ${content} ${type}`)
+        console.log(`${index}. ${type}`)
       }
     })
     .catch((error) => {
